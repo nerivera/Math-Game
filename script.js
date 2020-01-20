@@ -188,5 +188,5 @@ $(document).ready(function() {
 });
 
 function message(correct) {
-  return correct ? ["Nice", "Good Job", "Cool", "Outstanding", "Awesome", "Keep It Up"][Math.floor(Math.random() * 6)] : ["Oops", "Next Time", "Uh Oh", "Whoops", "Try Again"][Math.floor(Math.random() * 5)];
+  return correct ? ["Nice", "Good Job", "Cool", "Outstanding", "Awesome", "Keep It Up"][randInt(0, 5)] : ["Oops", "Next Time", "Uh Oh", "Whoops", "Try Again"][randInt(0, 4)];
 }
