@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Electric Math | Human Calculator</title>
+  </head>
+
+  <body>
+    <button id="show" onclick="change()">?</button>
+    <div id="coat">
+      <div id="coat1">
+        <select id="type" onchange="changeType()">
+          <option value="add" selected>Addition</option>
+          <option value="sub">Subtraction</option>
+          <option value="mul">Multiplication</option>
+        </select>
+      </div>
+      <div id="coat5">
+        <div id="easy" class="difficulty" onclick="changeDif(1, difThing(1))">Easy</div>
+        <div id="medium" class="difficulty" onclick="changeDif(2, difThing(2))">Medium</div>
+        <div id="hard" class="difficulty" onclick="changeDif(3, difThing(3))">Hard</div>
+      </div>
+      <div id="coat2">
+        <div id="math"></div>
+        <div id="line"></div>
+        <input id="ans" type="number" min=-79 max=841 placeholder="Answer" autofocus>
+      </div>
+      <div id="coat3">
+        <input id="submit" type="button" value="Submit" onclick="submit()">
+      </div>
+      <div id="coat4">
+        <div id="med" class="score">Score: 0</div>
+      </div>
+    </div>
+    <ul id="inst">
+      <li>With the dropdown menu at the top, you can choose to practice addition, subtraction, or multiplication</li>
+      <li>Type your answer to the given math problem in the box below the problem</li>
+      <li>Click "Submit" or press "ENTER" to submit your answer</li>
+      <li>The number at the bottom is your score</li>
+      <li>You can change the difficulty by clicking on the one you want at the top</li>
+      <li>Click the back arrow at the top-right to return to the game</li>
+    </ul>
+  </body>
+
+</html>
