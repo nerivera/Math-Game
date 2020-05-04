@@ -12,9 +12,7 @@ function change() {
   }
 }
 
-function difThing(i) {
-  return dif != i;
-}
+var difThing = i => (dif != i);
 
 function changeDif(n, doit) {
   $(".difficulty").css("background-color", "white");
